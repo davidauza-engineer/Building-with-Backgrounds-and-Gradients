@@ -8,22 +8,28 @@
 .main-grid-container {
   display: grid;
   grid-template: 538px 200px / repeat(4, 1fr);
-  grid-gap: 1px; /* TODO */
-  background: orange; /* TODO */
+  grid-gap: 2px; /* TODO */
+  background: white; /* TODO */
 }
 
 /* TODO */
 .main-grid-element {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Rules for the container of the main backgraund */
 .main-image-container {
   grid-area: 1 / 1 / span 1 / span 4;
   background-image: url(images/img_main_background.jpg);  
-  background-position-y: -2080px;
-  background-position-x: -75px;
-  background-size: 112%;
+  background-position: bottom center;
+  background-size: 1440px 1315px;
   border: none; /* TODO */
 }
 
+.last-row-column-one {
+  background-image: url(images/img_last_row_one.jpg);
+  background-position: center;
+  background-size: 364px 200px;
+  border: none; /* TODO */
+  overflow: show;
+}
