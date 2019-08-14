@@ -4,23 +4,26 @@
   padding: 0;
 }
 
+/* Rules for the main grid container */
 .main-grid-container {
   display: grid;
   grid-template: 538px 200px / repeat(4, 1fr);
-  background: orange;
-  grid-gap: 1px;
+  grid-gap: 1px; /* TODO */
+  background: orange; /* TODO */
 }
 
+/* TODO */
 .main-grid-element {
   border: 1px solid white;
 }
 
-.main-image {
+/* Rules for the container of the main backgraund */
+.main-image-container {
   grid-area: 1 / 1 / span 1 / span 4;
   background-image: url(images/img_main_background.jpg);  
-  background-position-y: -2102px;
-  background-position-x: -82px;
-  background-size: 113%;
-  border: none;
+  background-position-y: -2080px;
+  background-position-x: -75px;
+  background-size: 112%;
+  border: none; /* TODO */
 }
 
