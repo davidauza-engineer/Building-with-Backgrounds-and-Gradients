@@ -8,28 +8,78 @@
 .main-grid-container {
   display: grid;
   grid-template: 538px 200px / repeat(4, 1fr);
-  grid-gap: 2px; /* TODO */
-  background: white; /* TODO */
+  grid-gap: 2px;
 }
 
-/* TODO */
-.main-grid-element {
-  /* border: 1px solid white; */
-}
-
-/* Rules for the container of the main backgraund */
+/* Rules for the article container */
 .main-image-container {
   grid-area: 1 / 1 / span 1 / span 4;
   background-image: url(images/img_main_background.jpg);  
   background-position: bottom center;
   background-size: 1440px 1315px;
-  border: none; /* TODO */
 }
 
-.last-row-column-one {
-  background-image: url(images/img_last_row_one.jpg);
+/* Rules for the header container */
+.main-image-text-container {
+  width: 1440px;
+  height: 335px;
+  margin-top: 102px;
+  position: relative;
+}
+
+/* Rules for h1 headers */
+h1 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+
+/* Rules for h2 headers */
+h2 {
+  position: absolute;
+  top: 142px;
+  left: 150px;
+}
+
+/* Rules for the secont text image */
+.second-text-image {
+  width: 980px;
+  height: 82px;
+}
+
+/* Rules for the third text image*/
+.third-text-image {
+  width: 980px;
+  height: 64px;
+}
+
+/* Rules for the elements of the last row of the grid container */
+.last-row-element {
   background-position: center;
   background-size: 364px 200px;
-  border: none; /* TODO */
-  overflow: show;
+}
+
+/* Rules for link elements */
+.link {
+  cursor: pointer;
+}
+
+/* Rules for the first image from left to right of the last row in the grid container */
+.column-one {
+  background-image: url(images/img_last_row_one.jpg);
+}
+
+/* Rules for the second image from left to right of the last row in the grid container */
+.column-two {
+  background-image: url(images/img_last_row_two.jpg);
+}
+
+/* Rules for the third image from left to right of the last row in the grid container */
+.column-three {
+  background-image: url(images/img_last_row_three.jpg);
+}
+
+/* Rules for the fourth image from left to right of the last row in the grid container */
+.column-four {
+  background-image: url(images/img_last_row_four.jpg);
 }
