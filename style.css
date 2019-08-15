@@ -7,8 +7,8 @@
 /* Rules for the main grid container */
 .main-grid-container {
   display: grid;
-  grid-template: 538px 200px / repeat(4, 1fr);
-  grid-gap: 2px;
+  grid-template: 538px 200px / 1fr;
+  grid-row-gap: 2px;
 }
 
 /* Rules for the article container */
@@ -33,6 +33,12 @@ h1 {
   left: 150px;
 }
 
+/* Rules for the first text image */
+.first-text-image {
+  width: 980px;
+  height: 104px;
+}
+
 /* Rules for h2 headers */
 h2 {
   position: absolute;
@@ -40,7 +46,7 @@ h2 {
   left: 150px;
 }
 
-/* Rules for the secont text image */
+/* Rules for the second text image */
 .second-text-image {
   width: 980px;
   height: 82px;
@@ -67,7 +73,14 @@ h2 {
   top: -32px;
 }
 
-/* Rules for the elements of the last row of the grid container */
+/* Rules for the grid at the second row of the main grid */
+.second-grid {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  grid-column-gap: 0px;
+}
+
+/* Rules for the elements of the second grid */
 .last-row-element {
   background-position: center;
   background-size: 364px 200px;
@@ -78,22 +91,104 @@ h2 {
   cursor: pointer;
 }
 
-/* Rules for the first image from left to right of the last row in the grid container */
-.column-one {
-  background-image: url(images/img_last_row_one.jpg);
+/* Selector for list elements in the aside section */
+aside li {
+  height: 200px;
+  list-style: none;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 
-/* Rules for the second image from left to right of the last row in the grid container */
+/* Rules for the first image from left to right of the second grid */
+.column-one {
+  background-image: url(images/img_last_row_one.jpg);
+  margin-left: 0;
+}
+
+/* Rules for the second image from left to right of the second grid */
 .column-two {
   background-image: url(images/img_last_row_two.jpg);
 }
 
-/* Rules for the third image from left to right of the last row in the grid container */
+/* Rules for the third image from left to right of the second grid */
 .column-three {
   background-image: url(images/img_last_row_three.jpg);
 }
 
-/* Rules for the fourth image from left to right of the last row in the grid container */
+/* Rules for the fourth image from left to right of the second grid */
 .column-four {
   background-image: url(images/img_last_row_four.jpg);
+  margin-right: 0;
+}
+
+/* Rules for the footer tag */
+footer {
+  width: 100%;
+  height: 90px;
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 10px;
+  color: #6e6e6e;
+  font-weight: 100;
+}
+
+/* Rules for links inside the footer */
+footer a:link {
+  text-decoration: none;
+  color: rgb(0, 136, 204);
+}
+
+/* Rules for links inside the footer when the user hovers on it */
+footer a:link:hover {
+  text-decoration: underline;
+}
+
+/* Rules for the container inside the footer */
+.footer-container {
+  margin: 0 auto;
+  width: 980px;
+  height: 90px;
+}
+
+/* Rules fot the paragraph at the first row at the footer */
+.footer-row-one-left-p {
+  float:left;
+  margin-top: 22px;
+}
+
+/* Rules for right elements in the first row at the footer */
+.footer-row-one-right-elements {
+  float: right;
+  position: relative;
+  top: 19px;
+}
+
+/* Rules for list items in the footer section */
+footer li {
+  display: inline;
+  list-style: none;
+}
+
+/* Rules for the icon of a flag of a country */
+.country-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 4px;
+}
+
+/* Rules for the container of the copyright notice */
+.copyright-container {
+  clear: left;
+  padding-top: 10px;
+  margin-bottom: 22px;
+}
+
+/* Rules for paragraphs inside the copyright container */
+.copyright-container p {
+  display: inline;
+}
+
+/* Rules for unordered lists inside the copyright container */
+.copyright-container ul {
+  display: inline;
 }
