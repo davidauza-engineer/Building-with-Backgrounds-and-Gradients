@@ -21,7 +21,6 @@
 
 /* Rules for the header container */
 .main-image-text-container {
-  width: 1440px;
   height: 335px;
   margin-top: 102px;
   position: relative;
@@ -47,10 +46,25 @@ h2 {
   height: 82px;
 }
 
-/* Rules for the third text image*/
+/* Rules for the container of the third text image in the first row of the grid */
+.third-text-container {
+  position: absolute;
+  top: 251px;
+  left: 150px;
+  height: 31px;
+  overflow: hidden;
+}
+
+/* Rules for the third text image */
 .third-text-image {
   width: 980px;
   height: 64px;
+}
+
+/* Rules for the third text image when the user hovers on it */
+.third-text-image:hover {
+  position: relative;
+  top: -32px;
 }
 
 /* Rules for the elements of the last row of the grid container */
