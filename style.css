@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+/* Rules for the main header */
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
 /* Rules for the navbar container */
 .navbar-container {
   width: 100%;
@@ -119,13 +127,15 @@
 
 /* Rules for the search box itself */
 .search-box {
-  width: 88px;
+  width: 92px;
   height: 100%;
   background-color: transparent;
   border: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: -6px;
+  border-right: 1px solid #333;
+  border-radius: 12px;
 }
 
 /* Rules for the main grid container */
@@ -151,7 +161,7 @@
 }
 
 /* Rules for h1 headers */
-h1 {
+h2 {
   position: absolute;
   top: 47px;
   left: 150px;
@@ -164,7 +174,7 @@ h1 {
 }
 
 /* Rules for h2 headers */
-h2 {
+h3 {
   position: absolute;
   top: 142px;
   left: 150px;
