@@ -40,6 +40,14 @@
   display: flex;
 }
 
+/* Selector for list elements in the aside section */
+aside li {
+  height: 200px;
+  list-style: none;
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
 /* Rules for list items inside copyright container at the footer */
 .copyright-container li {
   padding: 0 4px;
@@ -229,14 +237,6 @@ h3 {
 /* Rules for link elements */
 .link {
   cursor: pointer;
-}
-
-/* Selector for list elements in the aside section */
-aside li {
-  height: 200px;
-  list-style: none;
-  margin-right: 1px;
-  margin-left: 1px;
 }
 
 /* Rules for the first image from left to right of the second grid */
